@@ -235,7 +235,166 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</h1>
+<h2 id="&#x6570;&#x7EC4;&#x5B9A;&#x4E49;">&#x6570;&#x7EC4;&#x5B9A;&#x4E49;</h2>
+<hr>
+<p> &#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x7684;&#x7EBF;&#x5F62;&#x96C6;&#x5408;collection&#xFF0C;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x6765;&#x4EFB;&#x610F;&#x5B58;&#x53D6;&#xFF0C;&#x7D22;&#x5F15;&#x901A;&#x5E38;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E;&#x7684;&#x504F;&#x79FB;&#x91CF;</p>
+<h2 id="&#x6570;&#x7EC4;&#x4F7F;&#x7528;">&#x6570;&#x7EC4;&#x4F7F;&#x7528;</h2>
+<hr>
+<h5 id="&#x521B;&#x5EFA;&#x6570;&#x7EC4;&#xFF08;-&#x64CD;&#x4F5C;&#x7B26;&#x88AB;&#x8BA4;&#x4E3A;&#x6548;&#x7387;&#x6700;&#x9AD8;-&#xFF09;">&#x521B;&#x5EFA;&#x6570;&#x7EC4;<em>&#xFF08; []&#x64CD;&#x4F5C;&#x7B26;&#x88AB;&#x8BA4;&#x4E3A;&#x6548;&#x7387;&#x6700;&#x9AD8; &#xFF09;</em></h5>
+<pre><code>var example0 = [];
+var example1 = [&apos;[]&#x64CD;&#x4F5C;&#x7B26;&apos;,&apos;&#x76F4;&#x63A5;&#x91CF;&apos;,&apos;new Array()&apos;];
+var example2 = new Array();
+var example3 = new Array(1,2,3);
+var example4 = new Array(3);
+</code></pre><h5 id="&#x5B57;&#x7B26;&#x4E32;&#x751F;&#x6210;&#x6570;&#x7EC4;">&#x5B57;&#x7B26;&#x4E32;&#x751F;&#x6210;&#x6570;&#x7EC4;</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+for(var i = 0;i &lt; exampleArr.length;i++){
+    console.log(exampleArr[i]);
+}
+</code></pre><h2 id="&#x5B58;&#x53D6;&#x51FD;&#x6570;">&#x5B58;&#x53D6;&#x51FD;&#x6570;</h2>
+<p> &#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x6570;&#x7EC4;&#x7684;&#x67D0;&#x79CD;&#x53D8;&#x4F53;</p>
+<hr>
+<h5 id="&#x67E5;&#x627E;&#x5143;&#x7D20;">&#x67E5;&#x627E;&#x5143;&#x7D20;</h5>
+<pre><code>1. indexOf() &#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x4E0E;&#x53C2;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7684;&#x7D22;&#x5F15;
+2. lastIndexOf() &#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4E0E;&#x53C2;&#x6570;&#x76F8;&#x540C;&#x7684;&#x5143;&#x7D20;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+console.log(exampleArr.indexOf(&apos;guolan&apos;));
+console.log(exampleArr.lastIndexOf(&apos;guolan&apos;));
+console.log(exampleArr.indexOf(&apos;guolanmeizi&apos;));
+</code></pre><h5 id="&#x6570;&#x7EC4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;">&#x6570;&#x7EC4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+console.log(exampleArr.join(&apos;&#x7B11;&apos;));
+console.log(exampleArr.toString());
+</code></pre><h5 id="&#x5DF2;&#x6709;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x65B0;&#x6570;&#x7EC4;">&#x5DF2;&#x6709;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x65B0;&#x6570;&#x7EC4;</h5>
+<pre><code>1. concat() &#x5408;&#x5E76;&#x591A;&#x4E2A;&#x6570;&#x7EC4;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;
+2. splice() &#x622A;&#x53D6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5B50;&#x96C6;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4; * &#x8FD8;&#x6709;&#x5176;&#x5B83;&#x7528;&#x6CD5; *
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr1 = exampleStr.split(&apos; &apos;);
+var exampleArr2 = [&apos;hehe&apos;,&apos;haha&apos;,&apos;heihei&apos;];
+var exampleArrNew1 = exampleArr1.concat(exampleArr2);
+var exampleArrNew2 = exampleArr1.splice(1,2);
+console.log(exampleArrNew1.join(&apos;&#x50BB;&apos;));
+console.log(exampleArrNew2.join(&apos;&#x54ED;&apos;));
+</code></pre><h2 id="&#x53EF;&#x53D8;&#x51FD;&#x6570;">&#x53EF;&#x53D8;&#x51FD;&#x6570;</h2>
+<p> &#x6539;&#x53D8;&#x6570;&#x7EC4;&#x5185;&#x5BB9;</p>
+<hr>
+<h5 id="&#x6DFB;&#x52A0;&#x5143;&#x7D20;">&#x6DFB;&#x52A0;&#x5143;&#x7D20;</h5>
+<pre><code>push() &#x6DFB;&#x52A0;&#x5230;&#x6570;&#x7EC4;&#x672B;&#x5C3E;
+unshift() &#x6DFB;&#x52A0;&#x5230;&#x6570;&#x7EC4;&#x5934;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+exampleArr.push(6,7);
+exampleArr.unshift(1,2);
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+</code></pre><h5 id="&#x5220;&#x9664;&#x5143;&#x7D20;">&#x5220;&#x9664;&#x5143;&#x7D20;</h5>
+<pre><code>pop() &#x5220;&#x9664;&#x5E76;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+shift() &#x5220;&#x9664;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+exampleArr.pop();
+exampleArr.shift();
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+</code></pre><h5 id="&#x4ECE;&#x4E2D;&#x95F4;&#x6DFB;&#x52A0;&#x6216;&#x5220;&#x9664;">&#x4ECE;&#x4E2D;&#x95F4;&#x6DFB;&#x52A0;&#x6216;&#x5220;&#x9664;</h5>
+<pre><code>splice() &#x8D77;&#x59CB;&#x4F4D;&#x7F6E; &#x5143;&#x7D20;&#x4E2A;&#x6570; &#x6DFB;&#x52A0;&#x5143;&#x7D20;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+exampleArr.splice(1,2,&apos;meizi&apos;,&apos;hanzi&apos;);
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+var arr = [&apos;xiaozi&apos;];
+exampleArr.splice(1,0,arr);
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+</code></pre><h5 id="&#x6570;&#x7EC4;&#x6392;&#x5E8F;">&#x6570;&#x7EC4;&#x6392;&#x5E8F;</h5>
+<pre><code>reverse() &#x5143;&#x7D20;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x7FFB;&#x8F6C;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+exampleArr.reverse();
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+sort() &#x9ED8;&#x8BA4;&#x6309;&#x7167;&#x5B57;&#x5178;&#x6392;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x51FD;&#x6570;&#x66F4;&#x6539;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;
+var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+exampleArr.sort();
+console.log(exampleArr.join(&apos;&#x50BB;&apos;));
+var arr = [100,3,1,2];
+console.log(arr.join(&apos;&#x50BB;&apos;));
+arr.sort();
+console.log(arr.join(&apos;&#x50BB;&apos;));
+function compare(num1,num2){
+    return num1 - num2;
+}
+arr.sort(compare);
+console.log(arr.join(&apos;&#x50BB;&apos;));
+</code></pre><h2 id="&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;">&#x8FED;&#x4EE3;&#x5668;&#x65B9;&#x6CD5;</h2>
+<hr>
+<h5 id="foreach-&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;">forEach() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var forEachTest = function(item){
+    console.log(item + &apos;&#x5E05;&#x6C14;&#x7F8E;&#x4E3D;&#x5341;&#x8DB3;&apos;)
+}
+exampleArr.forEach(forEachTest);
+</code></pre><h5 id="every-&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5747;&#x8FD4;&#x56DE;true&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;true">every() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5747;&#x8FD4;&#x56DE;true&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;true</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var everyTest = function(item){
+    return item.indexOf(&apos;o&apos;) &gt; -1;
+}
+exampleArr.every(everyTest);
+</code></pre><h5 id="some-&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x5747;&#x8FD4;&#x56DE;true&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;true">some() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x5747;&#x8FD4;&#x56DE;true&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;true</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var someTest = function(item){
+    return item.indexOf(&apos;i&apos;) &gt; -1;
+}
+exampleArr.some(someTest);
+</code></pre><h5 id="reduce-&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A;&#x7D2F;&#x52A0;&#x503C;&#x5F00;&#x59CB;&#xFF0C;&#x4E0D;&#x65AD;&#x5BF9;&#x7D2F;&#x52A0;&#x503C;&#x548C;&#x6570;&#x7EC4;&#x7684;&#x540E;&#x7EED;&#x5143;&#x7D20;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x76F4;&#x5230;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x7D2F;&#x52A0;&#x503C;----reduceright-&#x4ECE;&#x53F3;&#x5F00;&#x59CB;&#x6267;&#x884C;-">reduce() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A;&#x7D2F;&#x52A0;&#x503C;&#x5F00;&#x59CB;&#xFF0C;&#x4E0D;&#x65AD;&#x5BF9;&#x7D2F;&#x52A0;&#x503C;&#x548C;&#x6570;&#x7EC4;&#x7684;&#x540E;&#x7EED;&#x5143;&#x7D20;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x76F4;&#x5230;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6700;&#x540E;&#x8FD4;&#x56DE;&#x7D2F;&#x52A0;&#x503C;   <strong> reduceRight() &#x4ECE;&#x53F3;&#x5F00;&#x59CB;&#x6267;&#x884C; </strong></h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var reduceTest = function(val,item){
+    return val +&apos;&#x548C; &apos;+ item;
+}
+exampleArr.reduce(reduceTest);
+</code></pre><h5 id="map-&#x548C;-foreach&#x6709;&#x70B9;&#x50CF;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x7EC4;">map() &#x548C; forEach()&#x6709;&#x70B9;&#x50CF;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x7EC4;</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var mapTest = function(item){
+    return &apos;&#x548C;&apos;+ item;
+}
+var a = exampleArr.map(mapTest);
+console.log(exampleArr.join(&apos;-&apos;));
+console.log(a.join(&apos;-&apos;));
+</code></pre><h5 id="filter-&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;&#x65B0;&#x6570;&#x7EC4;&#x5305;&#x542B;&#x6240;&#x6709;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x540E;&#x7ED3;&#x679C;&#x4E3A;true&#x7684;&#x5143;&#x7D20;">filter() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;booble&#x7C7B;&#x578B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;&#xFF0C;&#x65B0;&#x6570;&#x7EC4;&#x5305;&#x542B;&#x6240;&#x6709;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#x540E;&#x7ED3;&#x679C;&#x4E3A;true&#x7684;&#x5143;&#x7D20;</h5>
+<pre><code>var exampleStr = &apos;guolan wangchao xiaobo guolan&apos;;
+var exampleArr = exampleStr.split(&apos; &apos;);
+var filterTest = function(item){
+    return item.indexOf(&apos;i&apos;) &gt; -1;
+}
+var b = exampleArr.filter(filterTest);
+console.log(b.join(&apos;-&apos;));
+</code></pre><h2 id="&#x591A;&#x7EF4;&#x6570;&#x7EC4;">&#x591A;&#x7EF4;&#x6570;&#x7EC4;</h2>
+<pre><code>var exampleArr = [[1,2],[1,2,3],[1,2,3,4]];
+for(var i = 0;i &lt; exampleArr.length;i++){
+    for(var j = 0;j &lt; exampleArr[i].length;j++){
+        console.log(exampleArr[i][j]);
+    }
+    console.log(&quot;\n&quot;);
+}
+</code></pre><h2 id="&#x5BF9;&#x8C61;&#x6570;&#x7EC4;">&#x5BF9;&#x8C61;&#x6570;&#x7EC4;</h2>
+<pre><code>var exampleArr = [
+    {&quot;a&quot;:1,&quot;b&quot;:2},
+    {&quot;a&quot;:3,&quot;b&quot;:4},
+];
+</code></pre><h2 id="&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x7EC4;">&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x6570;&#x7EC4;</h2>
+<pre><code>var exampleObj = {
+    &quot;a&quot;:1,
+    &quot;b&quot;:[1,2]
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -274,7 +433,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Array","level":"1.3.1","depth":2,"previous":{"title":"疯狂开始-JS那货","level":"1.3","depth":1,"path":"book/chapter-2/chapter-2.md","ref":"book/chapter-2/chapter-2.md","articles":[{"title":"Array","level":"1.3.1","depth":2,"path":"book/chapter-2/01-Array.md","ref":"book/chapter-2/01-Array.md","articles":[]}]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/chapter-2/01-Array.md","mtime":"2016-11-09T14:28:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-09T14:54:11.923Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Array","level":"1.3.1","depth":2,"previous":{"title":"疯狂开始-JS那货","level":"1.3","depth":1,"path":"book/chapter-2/chapter-2.md","ref":"book/chapter-2/chapter-2.md","articles":[{"title":"Array","level":"1.3.1","depth":2,"path":"book/chapter-2/01-Array.md","ref":"book/chapter-2/01-Array.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/chapter-2/01-Array.md","mtime":"2016-11-09T16:49:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-09T15:32:11.397Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
