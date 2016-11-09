@@ -3,5 +3,5 @@
    * [HTML 开发规范指南](book/chapter-1/01-Html.md)
    * [CSS 开发规范指南](book/chapter-1/02-CSS.md)
    * [Javascript 开发规范指南](book/chapter-1/03-Javascript.md)
-* [开发工具和插件](book/chapter-2/chapter-2.md)
-    * [CSS 插件](book/chapter-2/01-CSSPlugin.md)
+* [疯狂开始-JS那货](book/chapter-2/chapter-2.md)
+    * [Array](book/chapter-2/01-Array.md)
